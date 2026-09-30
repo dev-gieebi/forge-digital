@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forge-navy: #06264a;
+  --color-forge-navy-2: #0a3560;
+  --color-forge-blue: #0878f9;
+  --color-forge-blue-dark: #065fd0;
+  --color-forge-light: #eaf4ff;
+  --color-forge-sky: #d6e9ff;
+  --color-forge-text: #334155;
+  --color-forge-muted: #64748b;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-script: "Caveat", cursive;
+
+  --shadow-card: 0 6px 24px -8px rgba(6, 38, 74, 0.12);
+  --shadow-card-hover: 0 18px 40px -12px rgba(6, 38, 74, 0.22);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-forge-text);
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: var(--color-forge-blue);
+  color: #ffffff;
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Decorative side splashes (faithful to mockups) */
+.splash {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.9;
+}
+.splash-left {
+  left: 0;
+}
+.splash-right {
+  right: 0;
+  transform: scaleX(-1);
+}
+
+/* Thin decorative divider like on the mockups */
+.divider-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-forge-blue);
+}
+.divider-dots::before,
+.divider-dots::after {
+  content: "";
+  height: 2px;
+  width: 56px;
+  background: currentColor;
+  border-radius: 9999px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-forge-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-forge-navy-2);
+  border-radius: 9999px;
+}
+
+/* Focus visible */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-forge-blue);
+  outline-offset: 2px;
+}
