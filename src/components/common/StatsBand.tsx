@@ -24,18 +24,20 @@ export default function StatsBand({
           </p>
         </AnimatedSection>
 
-        <AnimatedSection delay={0.05}>
-          <StatCard icon={Rocket} value={50} prefix="+" label="projets réalisés" />
-        </AnimatedSection>
-        <AnimatedSection delay={0.1}>
-          <StatCard icon={Users} value={30} prefix="+" label="clients satisfaits" />
-        </AnimatedSection>
-        <AnimatedSection delay={0.15}>
-          <StatCard icon={Clock} value={100} suffix="%" label="engagement" />
-        </AnimatedSection>
-        <AnimatedSection delay={0.2}>
-          <StatCard icon={ShieldCheck} value={null} label="Des résultats" sublabel="concrets" />
-        </AnimatedSection>
+        <div className="grid w-full flex-1 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <AnimatedSection delay={0.05}>
+            <StatCard icon={Rocket} value={50} prefix="+" label="projets réalisés" />
+          </AnimatedSection>
+          <AnimatedSection delay={0.1}>
+            <StatCard icon={Users} value={30} prefix="+" label="clients satisfaits" />
+          </AnimatedSection>
+          <AnimatedSection delay={0.15}>
+            <StatCard icon={Clock} value={100} suffix="%" label="engagement" />
+          </AnimatedSection>
+          <AnimatedSection delay={0.2}>
+            <StatCard icon={ShieldCheck} value={null} label="Des résultats" sublabel="concrets" />
+          </AnimatedSection>
+        </div>
 
         <AnimatedSection delay={0.25} className="hidden xl:block">
           <p className="font-script max-w-[200px] text-right text-2xl leading-snug text-white/90">

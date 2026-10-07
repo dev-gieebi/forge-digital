@@ -46,7 +46,7 @@ export default function MobileMenu({ onClose }: MobileMenuProps) {
               onClick={onClose}
               className={({ isActive }) =>
                 cn(
-                  'block border-b border-white/10 py-4 text-2xl font-bold text-white/80 transition-colors hover:text-white',
+                  'block border-b border-white/10 py-4 text-md text-white/80 transition-colors hover:text-white',
                   isActive && 'text-forge-blue',
                 )
               }

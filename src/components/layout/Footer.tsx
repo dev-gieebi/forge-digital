@@ -67,7 +67,7 @@ export default function Footer() {
           <ul className="space-y-3 text-sm text-white/70">
             <li className="flex items-center gap-2.5">
               <Phone className="h-4 w-4 shrink-0 text-forge-blue" />
-              +237 6 00 00 00 00
+              +241 6 00 00 00 00
             </li>
             <li className="flex items-center gap-2.5">
               <Mail className="h-4 w-4 shrink-0 text-forge-blue" />
@@ -75,7 +75,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-2.5">
               <MapPin className="h-4 w-4 shrink-0 text-forge-blue" />
-              Douala, Cameroun
+              Libreville, Gabon
             </li>
           </ul>
           <div className="mt-5 flex gap-3">

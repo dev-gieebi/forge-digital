@@ -39,9 +39,9 @@ const initialForm: FormState = {
 }
 
 const contactInfo = [
-  { icon: Phone, label: 'Téléphone', value: '+237 6 00 00 00 00' },
+  { icon: Phone, label: 'Téléphone', value: '+241 6 00 00 00 00' },
   { icon: Mail, label: 'Email', value: 'contact@forgedigital.com' },
-  { icon: MapPin, label: 'Adresse', value: 'Douala, Cameroun' },
+  { icon: MapPin, label: 'Adresse', value: 'Libreville, Gabon' },
   { icon: Clock, label: 'Horaires', value: 'Lun – Sam : 8h00 – 18h00' },
 ]
 
@@ -202,7 +202,7 @@ export default function Contact() {
                   })}
                   {field('telephone', 'Téléphone', {
                     type: 'tel',
-                    placeholder: '+237 6 00 00 00 00',
+                    placeholder: '+241 60 00 00 00',
                     autoComplete: 'tel',
                   })}
                   {field('entreprise', 'Entreprise (optionnel)', {
@@ -290,7 +290,7 @@ export default function Contact() {
                 />
                 <MapPin className="h-8 w-8 text-forge-blue" />
                 <h2 className="mt-3 text-lg font-bold text-white">Où nous trouver</h2>
-                <p className="mt-1 text-sm text-white/75">Douala, Cameroun</p>
+                <p className="mt-1 text-sm text-white/75">Libreville, Gabon</p>
                 <p className="font-script mt-4 text-2xl text-white/85">
                   Votre projet commence ici.
                 </p>

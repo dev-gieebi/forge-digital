@@ -5,7 +5,7 @@ import PageHero from '../components/common/PageHero'
 import Splash from '../components/common/Splash'
 import StatsBand from '../components/common/StatsBand'
 import { usePageMeta } from '../hooks/usePageMeta'
-import heroAbout from '../assets/images/hero-about.webp'
+import heroAbout from '../assets/images/hero-about.jpg'
 import missionImg from '../assets/images/about-mission.webp'
 
 const values = [

@@ -6,7 +6,7 @@ import PageHero from '../components/common/PageHero'
 import Splash from '../components/common/Splash'
 import { services } from '../data/services'
 import { usePageMeta } from '../hooks/usePageMeta'
-import heroServices from '../assets/images/hero-services.webp'
+import heroServices from '../assets/images/hero-home.png'
 
 const whyUs = [
   { icon: Lightbulb, label: 'Créativité sans limites' },
@@ -71,7 +71,7 @@ export default function Services() {
                     src={service.image}
                     alt={service.title}
                     loading="lazy"
-                    className="h-24 w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="mx-4 mb-4 h-24 rounded-xl object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 )}
               </article>

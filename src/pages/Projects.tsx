@@ -6,7 +6,7 @@ import Splash from '../components/common/Splash'
 import { projectFilters, projects, type Project, type ProjectCategory } from '../data/projects'
 import { cn } from '../lib/utils'
 import { usePageMeta } from '../hooks/usePageMeta'
-import heroProjects from '../assets/images/hero-projects.webp'
+import heroProjects from '../assets/images/hero-projects.png'
 
 type Filter = ProjectCategory | 'tous'
 
@@ -97,21 +97,19 @@ export default function Projects() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.92 }}
                 transition={{ duration: 0.35, ease: 'easeOut' }}
-                className="group cursor-pointer overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-card transition-shadow duration-300 hover:shadow-card-hover"
+                className="group relative h-64 cursor-pointer overflow-hidden rounded-2xl shadow-card transition-shadow duration-300 hover:shadow-card-hover"
                 onClick={() => setSelected(project)}
               >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    loading="lazy"
-                    className="h-40 w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="flex items-center justify-between gap-3 p-4">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-x-0 bottom-0 flex items-center justify-between gap-3 bg-forge-navy/50 p-4">
                   <div>
-                    <h3 className="text-sm font-bold text-forge-navy">{project.title}</h3>
-                    <p className="mt-1 text-[11px] leading-snug text-forge-muted">{project.tags}</p>
+                    <h3 className="text-sm font-bold text-white">{project.title}</h3>
+                    <p className="mt-1 text-[11px] leading-snug text-white/75">{project.tags}</p>
                   </div>
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-forge-blue text-white transition-transform duration-300 group-hover:rotate-45">
                     <ArrowUpRight className="h-4 w-4" />

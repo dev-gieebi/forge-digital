@@ -11,7 +11,7 @@ import PageHero from '../components/common/PageHero'
 import Splash from '../components/common/Splash'
 import StatsBand from '../components/common/StatsBand'
 import { usePageMeta } from '../hooks/usePageMeta'
-import heroWhyUs from '../assets/images/hero-whyus.webp'
+import heroWhyUs from '../assets/images/hero-whyus.jpg'
 
 const reasons = [
   {

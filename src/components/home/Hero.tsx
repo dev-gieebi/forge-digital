@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { HeartHandshake, Play, Rocket, ShieldCheck, X } from 'lucide-react'
 import Button from '../common/Button'
-import heroImage from '../../assets/images/hero-home.webp'
+import heroImage from '../../assets/images/hero-home.png'
 import videoThumb from '../../assets/images/projects/video-ia.webp'
 
 const features = [
@@ -82,7 +82,7 @@ export default function Hero() {
             transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
           />
           <motion.div
-            className="absolute -left-4 top-8 hidden rounded-2xl bg-white px-4 py-3 shadow-card md:block"
+            className="absolute left-2 top-8 rounded-2xl bg-white px-4 py-3 shadow-card md:-left-2"
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
           >
