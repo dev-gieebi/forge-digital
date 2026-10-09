@@ -5,7 +5,7 @@ import { ArrowRight, Menu } from 'lucide-react'
 import { navigation } from '../../data/navigation'
 import { cn } from '../../lib/utils'
 import MobileMenu from './MobileMenu'
-import logo from '../../assets/images/logo.webp'
+import logo from '../../assets/images/logo.png'
 
 export default function Header() {
   const [open, setOpen] = useState(false)

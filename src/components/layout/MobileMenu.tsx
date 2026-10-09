@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, X } from 'lucide-react'
 import { navigation } from '../../data/navigation'
 import { cn } from '../../lib/utils'
-import logo from '../../assets/images/logo.webp'
+import logo from '../../assets/images/logo.png'
 
 interface MobileMenuProps {
   onClose: () => void

@@ -11,9 +11,9 @@ import {
 } from 'lucide-react'
 
 import imgInfographie from '../assets/images/services/infographie.webp'
-import imgWebdesign from '../assets/images/services/webdesign.webp'
-import imgSiteweb from '../assets/images/services/siteweb.webp'
-import imgIa from '../assets/images/services/ia.png'
+import imgWebdesign from '../assets/images/services/webdesign.jpg'
+import imgSiteweb from '../assets/images/services/siteweb.jpg'
+import imgIa from '../assets/images/services/ia.jpg'
 import imgPrint from '../assets/images/services/print.webp'
 import imgVideo from '../assets/images/services/video.webp'
 

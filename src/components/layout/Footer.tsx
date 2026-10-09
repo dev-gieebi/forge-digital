@@ -3,7 +3,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { navigation } from '../../data/navigation'
 import { services } from '../../data/services'
 import SocialIcon, { type SocialName } from '../common/SocialIcon'
-import logo from '../../assets/images/logo.webp'
+import logo from '../../assets/images/logo.png'
 
 const socials: Array<{ name: SocialName; label: string; href: string }> = [
   { name: 'facebook', label: 'Facebook', href: 'https://facebook.com' },

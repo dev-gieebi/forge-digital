@@ -1,9 +1,8 @@
-import imgMukite from '../assets/images/projects/mukite.webp'
-import imgBella from '../assets/images/projects/bella-event.webp'
-import imgOly from '../assets/images/projects/oly-prestige.webp'
+import imgMukite from '../assets/images/projects/mukite.jpg'
+import imgOly from '../assets/images/projects/oly-prestige.jpg'
 import imgCdjt from '../assets/images/projects/cdjt.webp'
-import imgLady from '../assets/images/projects/lady.webp'
-import imgInstitutionnel from '../assets/images/projects/institutionnel.webp'
+import imgLady from '../assets/images/projects/lady.jpg'
+import imgInstitutionnel from '../assets/images/projects/institutionnel.jpg'
 import imgBoma from '../assets/images/projects/boma.webp'
 import imgVideoIa from '../assets/images/projects/video-ia.webp'
 
@@ -41,15 +40,6 @@ export const projects: Project[] = [
     description:
       'Plateforme web développée sur mesure pour Mukite, accompagnée d’une stratégie de community management pour renforcer sa présence en ligne.',
     image: imgMukite,
-  },
-  {
-    id: 'bella-event',
-    title: 'Bella Event',
-    category: 'infographie',
-    tags: 'Flyers · Affiches · Identité visuelle',
-    description:
-      'Identité visuelle complète pour Bella Event : affiches, flyers et supports de communication pour un mariage anniversaire réussi.',
-    image: imgBella,
   },
   {
     id: 'oly-prestige',
